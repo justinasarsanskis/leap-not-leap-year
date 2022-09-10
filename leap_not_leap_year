@@ -1,0 +1,12 @@
+
+year = int(input("Which year do you want to check? "))
+
+
+if int(year)%4==0:
+	print("Leap year.")
+elif int(year)%100==0 and int(year)%400==0:
+	print("Leap year.")
+elif int(year)%4!=0 or int(year)%100!=0  or int(year)%400!=0:
+	print("Not leap year.")
+else:
+	print("Please enter year in numbers if you want program to run")
